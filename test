@@ -1,0 +1,29 @@
+We evaluated the Attack Success Rate (ASR) of six large language models across three different persona types:
+
+Instructor / Expert Demonstration (persona 0)
+
+Narrative / Roleplay Explanation (persona 1)
+
+Formal / Institutional Explanation (persona 2)
+
+Findings
+
+Across most models, personas 0 and 1 consistently produced higher ASRs than persona 2, indicating that instructive or narrative personas tend to encourage more unsafe completions.
+
+Falcon-11B: Persona 0 and 1 had ASRs of 0.921, slightly higher than persona 2 (0.885).
+
+Falcon-7B: Persona 1 showed the highest ASR (0.906), followed by persona 0 (0.875) and persona 2 (0.825).
+
+Mistral-7B: Persona 1 again led (0.871), with persona 0 at 0.831 and persona 2 at 0.752.
+
+LLaMA2-7B: Persona 1 (0.400) produced the highest ASR, while persona 0 (0.085) and persona 2 (0.377) were lower.
+
+LLaMA2-13B: ASRs were very low across all personas (0.006, 0.075, 0.042), showing minimal vulnerability.
+
+Phi-3: Persona 1 had the highest ASR (0.269), with persona 0 (0.158) and persona 2 (0.265) slightly lower.
+
+Summary
+
+Instructional and narrative personas (0 and 1) generally increase model susceptibility to unsafe completions compared to the formal persona (2).
+
+Some models, such as LLaMA2-7B, exhibit strong sensitivity to persona, while models like LLaMA2-13B remain safe across all personas.
